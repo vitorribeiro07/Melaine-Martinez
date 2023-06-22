@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="IE=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/borboleta.png">
+    <title>Melaine || Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<script language="javascript" type="text/javascript">
+function contato()
+        {
+		    var nome = contato.nome.value;
+		    var email = contato.email.value;
+		    var numero = contato.numero.value;
+		
+		    if (nome.length<7){
+		    alert('Por favor peencha o campo com seu nome!');
+		    contato.nome.focus();
+		    return false;
+		    }
+		    if (numero.lentgh<11){
+		    alert('Campo número de telefone preenchido incorretamente');
+		    contato.numero.focus();
+		    return false;
+		    }
+		}
+		</script>
+</head>
+
+
+<body>
+    <nav>
+        <ul class="menu">
+        <a class="icone" href="index.html"><img src="fada.png" width="50" height="45"></a>
+            <li><a class="top" href="historia.html">HISTORIA</a></li>
+            <li><a class="top" href="musicas.html">SUCESSO</a></li>
+            <li><a class="top" href="albuns.html">GALERIA</a></li>
+            <li><a class="top" href="contato.html">CONTATO</a></li>
+        </ul>
+    </nav>
+
+    <p class="cnt1">Entre em contato</p>
+    <div class="formulario">
+    <form name="comentario" action="concluido.html" method="get"> 
+        <label for="nome">Nome</label >
+        <input type="text" name="nome" placeholder="Digite seu nome aqui!" required>
+        <label for="email">Email</label >
+        <input type="text" name="email" placeholder="nome@gmail.com" required>
+        <label for="numero">Número</label >
+        <input type="text" name="contato" placeholder="(XX)XXXXX-XXXX" required>
+        <textarea name="email" cols="40" rows="10"></textarea>
+        <button type="submit" onclick="return contato()">Enviar</button>
+    </form>
+    </div>
+
+    <h1 class="roda-pe2">Vitor Ribeiro 2023 -&copyTodos os direitos reservados</h1>
+</body>
+
+</html>
